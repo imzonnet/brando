@@ -124,6 +124,16 @@ jQuery(document).ready(function ($) {
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
+    /**
+     * Main Menu
+     */
+    $('.indicator').click(function() {
+        $(this).parent().toggleClass('open');
+    });
+    $('#menu-phone-icon').click(function(e) {
+        $('.main-navigation .main-menu').toggleClass('open');
+        e.stopPropagation();
+    });
 });
 /*-----------------------------------------------------------------------------------*/
 /*    CONTACT FORM
