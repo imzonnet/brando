@@ -40,6 +40,7 @@ body {
 	font-weight: normal;
 	position: relative;
 	font-size: 16px;
+    line-height: 26px;
 	font-family: 'Roboto Slab', sans-serif;
 }
 /*=======================================================
@@ -213,6 +214,18 @@ img {
 .bg-parallax .bg-border-double:after {
     bottom: 10px;
 }
+.border-right {
+    border-right: 1px solid #d7d7d7;
+}
+.border-left {
+    border-left: 1px solid #d7d7d7;
+}
+.border-bottom {
+    border-bottom: 1px solid #d7d7d7;
+}
+.border-top {
+    border-top: 1px solid #d7d7d7;
+}
 /*=======================================================
       SECTION
 ========================================================*/
@@ -250,6 +263,9 @@ section {
 .heading-title.line-bottom {
     padding-bottom: 13px;
     position: relative;
+}
+.heading-title.line-bottom h2 {
+    margin-top: 0;
 }
 .heading-title.line-bottom span {
     margin-bottom: 0;
@@ -371,7 +387,6 @@ section {
 ========================================================*/
 .top-bar {
 	background: #b88e54;
-	height: 40px;
     line-height: 40px;
     color: #FFF;
     font-size: 14px;
@@ -412,7 +427,9 @@ section {
 .top-bar ul li:last-child:after {
     content: none;
 }
-
+.top-bar-action {
+    text-align: right;
+}
 /*=======================================================
       HEADER
 ========================================================*/
@@ -717,12 +734,12 @@ section {
     text-align: center;
 }
 .team-box img {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 .team-box .team-title {
     font-family: "Great Vibes";
     font-size: 30px;
-    margin: 0 0 5px;
+    margin: 0 0 10px;
     color: #000;
 }
 .team-box .team-position {
@@ -753,6 +770,9 @@ section {
 /*=======================================================
       Fancy Box
 ========================================================*/
+#about-us .fancy-box {
+    margin-bottom: 0;
+}
 .fancy-box {
     overflow: hidden;
     margin-bottom: 20px;
@@ -813,7 +833,9 @@ section {
     max-width: 50%;
     position: relative;
 }
-
+.menu-specials .menu-image img {
+    width: 100%;
+}
 .menu-specials .menu-item-inner {
     overflow: hidden;
     position: relative;
@@ -915,6 +937,11 @@ section {
 }   
 
 /*---- Menu List ----*/
+#our-menus .heading-image {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .menu-list {
 }
 .menu-list .menu-item {
@@ -948,7 +975,7 @@ section {
 }
 .menu-list .menu-item .info .btn-table {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 0;
     width: 60px;
     height: 30px;
@@ -1100,6 +1127,7 @@ section {
 }
 .blog-item {
     position: relative;
+    margin-bottom: 20px;
 }
 .blog-item .blog-header {
     text-align: center;
