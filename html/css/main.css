@@ -1199,6 +1199,11 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 .padding-right-130{padding-right:130px !important;}
 .padding-top-130{padding-top:130px !important;}
 .padding-bottom-130{padding-bottom:130px !important;}
+.margin-105{margin:105px !important;}
+.margin-left-105{margin-left:105px !important;}
+.margin-right-105{margin-right:105px !important;}
+.margin-top-105{margin-top:105px !important;}
+.margin-bottom-105{margin-bottom:105px !important;}
 .margin-110{margin:110px !important;}
 .margin-left-110{margin-left:110px !important;}
 .margin-right-110{margin-right:110px !important;}

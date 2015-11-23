@@ -39,45 +39,50 @@ jQuery(document).ready(function ($) {
     });
     /*-----------------------------------------------------------------------------------*/
     /* 	SLIDER REVOLUTION
-     /*-----------------------------------------------------------------------------------*/
-    jQuery('.tp-banner').show().revolution({
-        dottedOverlay: "none",
-        delay: 10000,
-        startwidth: 1170,
-        startheight: 700,
-        navigationType: "bullet",
-        navigationArrows: "solo",
-        navigationStyle: "preview4",
-        parallax: "mouse",
-        parallaxBgFreeze: "on",
-        parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-        keyboardNavigation: "on",
-        shadow: 0,
-        fullWidth: "on",
-        fullScreen: "on",
-        shuffle: "off",
-        autoHeight: "off",
-        forceFullWidth: "off",
-        fullScreenOffsetContainer: ""
-    });
+     /*-----------------------------------------------------------------------------------*/4
+    if($('.tp-banner').length) {
+        jQuery('.tp-banner').show().revolution({
+            dottedOverlay: "none",
+            delay: 10000,
+            startwidth: 1170,
+            startheight: 900,
+            navigationType: "bullet",
+            navigationArrows: "solo",
+            navigationStyle: "preview4",
+            parallax: "mouse",
+            parallaxBgFreeze: "on",
+            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+            keyboardNavigation: "on",
+            shadow: 0,
+            fullWidth: "on",
+            fullScreen: "on",
+            shuffle: "off",
+            autoHeight: "off",
+            forceFullWidth: "off",
+            fullScreenOffsetContainer: ""
+        });
+    }
+
     /*-----------------------------------------------------------------------------------*/
     /* 	SLIDER REVOLUTION
      /*-----------------------------------------------------------------------------------*/
-    jQuery('.tp-banner-fix').show().revolution({
-        dottedOverlay: "none",
-        delay: 10000,
-        startwidth: 1170,
-        startheight: 700,
-        navigationType: "bullet",
-        navigationArrows: "solo",
-        navigationStyle: "preview4",
-        parallax: "mouse",
-        parallaxBgFreeze: "on",
-        parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-        keyboardNavigation: "on",
-        fullWidth: "off",
-        fullScreen: "off"
-    });
+    if( jQuery('.tp-banner-fix').length )  {
+        jQuery('.tp-banner-fix').show().revolution({
+            dottedOverlay: "none",
+            delay: 10000,
+            startwidth: 1170,
+            startheight: 1080,
+            navigationType: "bullet",
+            navigationArrows: "solo",
+            navigationStyle: "preview4",
+            parallax: "mouse",
+            parallaxBgFreeze: "on",
+            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+            keyboardNavigation: "on",
+            fullWidth: "off",
+            fullScreen: "off"
+        });
+    }
     /*-----------------------------------------------------------------------------------*/
     /* 	ANIMATION
      /*-----------------------------------------------------------------------------------*/
@@ -91,15 +96,15 @@ jQuery(document).ready(function ($) {
     /*-----------------------------------------------------------------------------------*/
     /*	ISOTOPE PORTFOLIO
      /*-----------------------------------------------------------------------------------*/
-    var $container = $('.port-wrap .items');
+    var $container = $('.gallery-wrap .gallery-items');
     $container.imagesLoaded(function () {
         $container.isotope({
-            itemSelector: '.portfolio-item',
+            itemSelector: '.gallery-item',
             layoutMode: 'masonry'
         });
     });
-    $('.portfolio-filter li a').on('click', function () {
-        $('.portfolio-filter li a').removeClass('active');
+    $('.gallery-filter li a').on('click', function () {
+        $('.gallery-filter li a').removeClass('active');
         $(this).addClass('active');
         var selector = $(this).attr('data-filter');
         $container.isotope({
@@ -116,6 +121,14 @@ jQuery(document).ready(function ($) {
         infinite: false,
         speed: 300,
         arrows: false
+    });
+    $('.testimonial-slide-2').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        arrows: true,
+        prevArrow : '<i class="prev fa fa-angle-left"></i>',
+        nextArrow : '<i class="next fa fa-angle-right"></i>'
     });
     /**
      * Back to top

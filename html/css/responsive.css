@@ -1,70 +1,90 @@
-@media(min-width:1400px) and (max-width:1920px) {
+@media (min-width: 1400px) and (max-width: 1920px) {
 }
-@media(min-width:1200px) and (max-width:1400px) {
+
+@media (min-width: 1200px) and (max-width: 1400px) {
 
 }
-@media(max-width:1200px) {
+
+@media (max-width: 1200px) {
 
 }
-@media(max-width:1024px) {
+
+@media (max-width: 1024px) {
 
 }
-@media(min-width:992px) {
-    .event-item .event-header,
-    .event-item .event-body {
-        max-width: 50%;
-    }
-}
-@media (max-width:991px) {
-    /** Header **/
-    .top-bar-action,
-    .top-bar-contact {
-        text-align: center;
-    }
-    .menu-specials .menu-item.odd {
-        padding-right: 15px;
-    }
-    .menu-specials .menu-item.even {
-        padding-left: 15px;
-    }
-    /**--event-item--*/
-    .event-item {
-        display: block;
-    }
-    .event-item .event-header {
-        text-align: center;
-    }
-    .event-item .event-header img {
-        float: none;
-        margin: 0;
-    }
-    .event-item .event-body .event-body-inner {
-        position: relative;
-        left: 0;
-        top: 0;
-    }
 
-    /** -- Footer -- **/
-    .footer-top [class*="col-md"] {
-        margin-bottom: 20px;
-    }
+@media (min-width: 992px) {
+  .event-item .event-header,
+  .event-item .event-body {
+    max-width: 50%;
+  }
+  .reservation-form .image {
+    padding-left: 0;
+  }
 }
-@media(max-width:767px) {
+
+@media (max-width: 991px) {
+  /** Header **/
+  .top-bar-action,
+  .top-bar-contact {
+    text-align: center;
+  }
+
+  .menu-specials .menu-item.odd {
+    padding-right: 15px;
+  }
+
+  .menu-specials .menu-item.even {
+    padding-left: 15px;
+  }
+
+  /**--event-item--*/
+  .event-item {
+    display: block;
+  }
+
+  .event-item .event-header {
+    text-align: center;
+  }
+
+  .event-item .event-header img {
+    float: none;
+    margin: 0;
+  }
+
+  .event-item .event-body .event-body-inner {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  /** -- Footer -- **/
+  .footer-top [class*="col-md"] {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
 
 }
-@media (max-width:640px) {
+
+@media (max-width: 640px) {
 
 }
-@media(max-width:540px) {
+
+@media (max-width: 540px) {
 
 }
-@media(max-width:440px) {
-    .event-item .event-body .event-body-inner {
-        padding: 10px;
-    }
-    .event-item .event-body .event-info {
-        padding-left: 80px;
-    }
+
+@media (max-width: 440px) {
+  .event-item .event-body .event-body-inner {
+    padding: 10px;
+  }
+
+  .event-item .event-body .event-info {
+    padding-left: 80px;
+  }
 }
-@media(max-width:320px) {
+
+@media (max-width: 320px) {
 }
