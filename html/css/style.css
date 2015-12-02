@@ -242,7 +242,6 @@ img {
 ========================================================*/
 section {
   position: relative;
-  overflow: hidden;
   width: 100%;
 }
 /*=======================================================
@@ -547,16 +546,16 @@ select.form-control{
   color: #333;
 }
 /*=======================================================
-      Page Element - Page Title
+      Page Element
+        - Page title
+        - Breadcrumb
 ========================================================*/
-#page-element {
+#page-title {
   position: relative;
   background-size: cover;
   padding-top: 180px;
   padding-bottom: 180px;
   margin-bottom: 100px;
-}
-#page-title {
   text-align: center;
 }
 #page-title h1 {
@@ -573,6 +572,30 @@ select.form-control{
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.3em;
+}
+#page-breadcrumb {
+  position: relative;
+  background-size: cover;
+  padding-top: 135px;
+  padding-bottom: 50px;
+  margin-bottom: 130px;
+}
+#page-breadcrumb .breadcrumb {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+#page-breadcrumb .breadcrumb > li + li::before {
+  content: "\f105";
+  font-family: FontAwesome;
+  padding: 0 14px;
+}
+#page-breadcrumb .breadcrumb li a {
+  color: #FFF;
+  text-transform: uppercase;
+}
+#page-breadcrumb .breadcrumb li a:hover {
+  color: #b78e54;
 }
 /*=======================================================
       TOP BAR
@@ -957,7 +980,7 @@ select.form-control{
 }
 .team-box .team-social li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 .team-box .team-social li a {
   font-size: 22px;
@@ -986,9 +1009,6 @@ select.form-control{
 }
 .team-box.default img {
   margin-bottom: 35px;
-}
-.team-box.default .team-social li {
-  padding: 0 3px;
 }
 .team-box.default .team-title {
   font-family: "Great Vibes";
@@ -1667,8 +1687,121 @@ select.form-control{
 .menu-tables {}
 .menu-table-item {
   position: relative;
+  margin-bottom: 30px;
 }
-
+.menu-table-item .menu-table-item-inner {
+  transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+.menu-table-item .menu-table-item-inner:hover,
+.menu-table-item.menu-featured  .menu-table-item-inner{
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  -o-transform: translateY(-25px);
+}
+.menu-table-item .menu-head {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #FFF;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+.menu-table-item .menu-head:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 1px solid #FFF;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.3);
+}
+.menu-table-item .menu-head .hot {
+  color: #fff;
+  height: 25px;
+  left: -50px;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  width: 150px;
+  z-index: 10;
+  font-size: 14px;
+}
+.menu-table-item .menu-head .hot.new {
+  background-color: #b282be;
+}
+.menu-table-item .menu-head .hot.save {
+  background-color: #f35d1c;
+}
+.menu-table-item .menu-meta {
+  list-style: none inside;
+}
+.menu-table-item .menu-meta li {
+  text-align: center;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #FFF;
+  background-color: #ebebeb;
+}
+.menu-table-item .menu-meta li:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+.menu-table-item .menu-price {
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  background-color: #ebebeb;
+  font-size: 40px;
+  color: #b78e54;
+}
+.menu-table-item .menu-price .price {
+  display: inline-block;
+  line-height: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.menu-table-item .menu-price .price span {
+  display: block;
+}
+.menu-table-item .menu-price .price .sale {
+  font-size: 20px;
+  left: -15px;
+  position: absolute;
+  top: -15px;
+}
+.menu-table-item .menu-price .price .discount {
+  font-size: 16px;
+}
+.menu-table-item .menu-foot {
+  background-color: #FFF;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+.menu-table-item .menu-foot .btn {
+  border: 5px solid #e1e1e1;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-table-item .menu-foot .btn:hover {
+  border-color: #b88e54;
+  color: #b88e54;
+}
 /*=======================================================
       Counter Box
 ========================================================*/
