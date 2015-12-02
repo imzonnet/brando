@@ -94,23 +94,37 @@ jQuery(document).ready(function ($) {
     });
     wow.init();
     /*-----------------------------------------------------------------------------------*/
-    /*	ISOTOPE PORTFOLIO
+    /*	Shuffe PORTFOLIO
      /*-----------------------------------------------------------------------------------*/
-    var $container = $('.gallery-wrap .gallery-items');
-    $container.imagesLoaded(function () {
-        $container.isotope({
+    $('.gallery-wrap').each(function() {
+        var $grid = $(this).find('.gallery-items'),
+            $sizer = $grid.find('.shuffle__sizer');
+
+        $grid.shuffle({
             itemSelector: '.gallery-item',
-            layoutMode: 'masonry'
+            sizer: $sizer
         });
-    });
-    $('.gallery-filter li a').on('click', function () {
-        $('.gallery-filter li a').removeClass('active');
-        $(this).addClass('active');
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector
+
+        $('.filter-item', $('.gallery-wrap')).find('a').on('click', function(e) {
+            e.preventDefault();
+            if ($(this).hasClass('active')) return false;
+            var $this = $(this),
+                filter = $this.data('filter');
+            if (filter == '*') {
+                $grid.shuffle('shuffle', 'all');
+            } else {
+                $grid.shuffle('shuffle', function ($el, shuffle) {
+                    /*Only search elements in the current group*/
+                    if (shuffle.group !== 'all' && $.inArray(shuffle.group, $el.data('groups')) === -1) {
+                        return false;
+                    }
+                    return $el.hasClass(filter);
+                });
+            }
+            $(this).parents('.gallery-filter').find('a').removeClass('active');
+            $(this).addClass('active');
+            return false;
         });
-        return false;
     });
 
     /**
