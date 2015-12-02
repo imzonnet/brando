@@ -995,6 +995,7 @@ select.form-control{
   font-size: 30px;
   margin: 0 0 10px;
   color: #000;
+  text-transform: none;
 }
 .team-box.default .team-position {
   text-transform: uppercase;
