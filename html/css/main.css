@@ -1515,7 +1515,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 }
 
 .slick-slide img {
-    display: block;
+    display: inline-block;
 }
 
 .slick-slide.slick-loading img {

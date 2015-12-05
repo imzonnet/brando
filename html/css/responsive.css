@@ -58,9 +58,20 @@
     top: 0;
   }
 
+  /** -- Menu Single -- **/
+  .menu-single .menu-image {
+    margin-bottom: 30px;
+  }
+
   /** -- Footer -- **/
   .footer-top [class*="col-md"] {
     margin-bottom: 20px;
+  }
+  footer .block-instagram ul li {
+    width: 10%;
+  }
+  .block-instagram ul li:nth-child(4n+1) {
+    clear: none;
   }
 }
 

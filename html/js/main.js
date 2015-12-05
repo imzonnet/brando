@@ -145,6 +145,18 @@ jQuery(document).ready(function ($) {
         nextArrow : '<i class="next fa fa-angle-right"></i>'
     });
     /**
+     * Menu Single Image Preview
+     */
+    $('.menu-image .image-thumbnail').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        arrows: true,
+        slidesToShow: 3,
+        prevArrow : '<i class="prev fa fa-angle-left"></i>',
+        nextArrow : '<i class="next fa fa-angle-right"></i>'
+    });
+    /**
      * Back to top
      */
     $('#back-to-top').click(function() {

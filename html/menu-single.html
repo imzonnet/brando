@@ -220,7 +220,7 @@
       <div class="row">
         <div id="primary" class="col-md-9">
           <div class="menu-single">
-            <div class="row">
+            <div class="row menu-header">
               <div class="col-md-4">
                 <div class="menu-image">
                   <div class="image-preview">
@@ -229,6 +229,12 @@
                   <div class="image-thumbnail">
                     <div class="image-item">
                       <img src="images/menus/single/image-2.jpg" alt=""/>
+                    </div>
+                    <div class="image-item">
+                      <img src="images/menus/single/image-3.jpg" alt=""/>
+                    </div>
+                    <div class="image-item">
+                      <img src="images/menus/single/image-3.jpg" alt=""/>
                     </div>
                     <div class="image-item">
                       <img src="images/menus/single/image-3.jpg" alt=""/>
@@ -247,7 +253,7 @@
                     </div>
                   </div>
                   <div class="menu-price">$8.05</div>
-                  <div class="menu-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                  <div class="menu-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</div>
                   <div class="menu-action">
                     <a class="btn btn-primary btn-cart" href="#.">Add to table</a>
                     <a class="btn btn-primary btn-favorites" href="#."><i class="fa fa-heart"></i></a>
@@ -289,23 +295,25 @@
             </div>
           </div><!-- End Menu Single -->
           <div id="comments-wrap">
-            <h2 class="title">Reviews (1)</h2>
+            <h2 class="comments-head">Reviews (1)</h2>
             <div class="comments">
               <div class="comment-item">
-                <div class="comment-thumbnail">
-                  <a href="#."><img src="images/icon/avatar.jpg" alt="Ana Pham"/></a>
-                </div>
-                <div class="comment-info">
-                  <h3 class="vcard">Ana Pham</h3>
-                  <div class="comment-rate">
-                    <span>Grade</span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star blank"></i>
-                    <i class="fa fa-star blank"></i>
+                <div class="comment-item-inner">
+                  <div class="comment-thumbnail">
+                    <a href="#."><img src="images/icon/avatar.jpg" alt="Ana Pham"/></a>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mam aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseat</p>
+                  <div class="comment-info">
+                    <div class="comment-author">Ana Pham</div>
+                    <div class="comment-rate">
+                      <span>Grade</span>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star blank"></i>
+                      <i class="fa fa-star blank"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mam aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                  </div>
                 </div>
               </div>
             </div><!-- End Comments -->
@@ -354,36 +362,42 @@
             </div>
           </div><!-- End block Adv-->
           <div class="block block-categories">
-            <div class="block-title">Categories</div>
+            <h3 class="block-title">Categories</h3>
             <div class="block-content">
               <ul>
-                <li><a href="#.">Meat</a> <span>[3]</span></li>
-                <li class="active"><a href="#.">Seafood</a> <span>[1]</span></li>
-                <li><a href="#.">Fruit</a> <span>[5]</span></li>
-                <li><a href="#.">Vegetables</a> <span>[7]</span></li>
-                <li><a href="#.">Ice-cream</a> <span>[10]</span></li>
-                <li><a href="#.">Cake & Chocolate</a> <span>[26]</span></li>
+                <li><a href="#.">Meat <span>[3]</span></a> </li>
+                <li class="active"><a href="#.">Seafood <span>[1]</span></a></li>
+                <li><a href="#.">Fruit <span>[5]</span></a></li>
+                <li><a href="#.">Vegetables <span>[7]</span></a></li>
+                <li><a href="#.">Ice-cream <span>[10]</span></a></li>
+                <li><a href="#.">Cake & Chocolate <span>[26]</span></a></li>
               </ul>
             </div>
           </div><!-- End block Categories-->
           <div class="block block-favorite-food">
-            <div class="block-title">Favorite Food</div>
+            <h3 class="block-title">Favorite Food</h3>
             <div class="block-content">
               <div class="favorite-food">
                 <div class="favorite-item">
-                  <a class="image" href="#."><img src="images/menus/favorites/menu-1.jpg" alt=""/></a>
-                  <h3 class="title">Special filet</h3>
-                  <div class="price">$9.08</div>
+                  <a class="favorite-image" href="#."><img src="images/menus/favorites/menu-1.jpg" alt=""/></a>
+                  <div class="favorite-info">
+                    <h3 class="title"><a href="#.">Special filet</a></h3>
+                    <div class="price">$9.08</div>
+                  </div>
                 </div>
                 <div class="favorite-item">
-                  <a class="image" href="#."><img src="images/menus/favorites/menu-2.jpg" alt=""/></a>
-                  <h3 class="title">Peach french toast</h3>
-                  <div class="price">$9.08</div>
+                  <a class="favorite-image" href="#."><img src="images/menus/favorites/menu-2.jpg" alt=""/></a>
+                  <div class="favorite-info">
+                    <h3 class="title"><a href="#.">Peach french toast</a></h3>
+                    <div class="price">$9.08</div>
+                  </div>
                 </div>
                 <div class="favorite-item">
-                  <a class="image" href="#."><img src="images/menus/favorites/menu-3.jpg" alt=""/></a>
-                  <h3 class="title">Summer Melon Salad</h3>
-                  <div class="price">$9.08</div>
+                  <a class="favorite-image" href="#."><img src="images/menus/favorites/menu-3.jpg" alt=""/></a>
+                  <div class="favorite-info">
+                    <h3 class="title"><a href="#.">Summer Melon Salad</a></h3>
+                    <div class="price">$9.08</div>
+                  </div>
                 </div>
               </div>
             </div>
