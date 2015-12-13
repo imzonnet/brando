@@ -126,7 +126,12 @@ jQuery(document).ready(function ($) {
             return false;
         });
     });
-
+    $('#modal-list-tables').on('shown.bs.modal', function (e) {
+        $('.gallery-wrap').each(function() {
+            var $grid = $(this).find('.gallery-items');
+            $grid.shuffle('update');
+        });
+    });
     /**
      * Testimonial Slide
      */
@@ -172,6 +177,14 @@ jQuery(document).ready(function ($) {
     $('#menu-phone-icon').click(function(e) {
         $('.main-navigation .main-menu').toggleClass('open');
         e.stopPropagation();
+    });
+    /**
+     * Reservation
+     */
+    $('.place-choose input[name="place"]').on('change', function() {
+        $('.place-list-item', $('.place-list-wrap')).slideUp();
+        var id = '#'+$('.place-choose input[name="place"]:checked').val();
+        $(id).slideDown();
     });
 });
 /*-----------------------------------------------------------------------------------*/

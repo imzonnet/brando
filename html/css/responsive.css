@@ -73,6 +73,12 @@
   .block-instagram ul li:nth-child(4n+1) {
     clear: none;
   }
+
+  /** Reservation **/
+  #reservation-cart {
+    width: 100%;
+    overflow-x: scroll;
+  }
 }
 
 @media (max-width: 767px) {
