@@ -341,6 +341,24 @@ section {
   color: #888;
   margin-top: 12px;
 }
+.title-line-bottom {
+  margin: 0 0 30px;
+  padding: 0 0 20px;
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.title-line-bottom:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #b88e54;
+}
 /* Heading Image */
 .heading-image {
   position: relative;
@@ -412,7 +430,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .btn.btn-small {
-  padding: 5px 25px;
+  padding: 7px 25px;
 }
 
 .btn.radius {
@@ -2184,7 +2202,56 @@ select.form-control{
 .event-item .event-body .event-action .btn-event:hover {
   color: #dedede;
 }
+/** Event Single **/
+.event-single .event-image {
+  margin-bottom: 32px;
+}
+.event-single .event-content {
+  margin-bottom: 25px;
+}
+.event-single .event-meta {
+  position: relative;
+  overflow: hidden;
+}
+.event-single .event-meta .btn {
+  color: #868787;
+}
+.event-single .event-meta .btn:hover {
+  color: #b78e54;
+}
+.event-single .event-meta .event-social {
+  position: absolute;
+  top: 0;
+  right: 0;
 
+}
+.event-single .event-meta .event-social li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 6px;
+}
+.event-single .event-meta .event-social li a {
+  color: #FFF;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #b7b7b7;
+  text-align: center;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.event-single .event-meta .event-social li a:hover {
+  background-color: #000000;
+}
+.event-map {
+  margin-top: 45px;
+}
+.event-map .event-content {
+  border: 5px solid #e5e5e5;
+}
 /*=======================================================
       Testimonial
 ========================================================*/
@@ -2453,6 +2520,19 @@ select.form-control{
 #sidebar .block ul li span {
   float: right;
 }
+.sidebar .block-contact ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.sidebar .block-contact ul li .fa {
+  float: left;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.sidebar .block-contact ul li span {
+  padding-left: 22px;
+  display: block;
+}
 .block-favorite-food .favorite-food {
   position: relative;
 }
@@ -2561,20 +2641,6 @@ select.form-control{
 }
 .block-instagram ul li:nth-child(4n+1) {
   clear: left;
-}
-
-.block-contact ul li {
-  position: relative;
-  margin-bottom: 10px;
-}
-.block-contact ul li .fa {
-  float: left;
-  margin-top: 5px;
-  font-size: 16px;
-}
-.block-contact ul li span {
-  padding-left: 22px;
-  display: block;
 }
 /*=======================================================
       Footer
@@ -3109,26 +3175,6 @@ footer .block ul li span {
 .service-box .service-info {
 
 }
-.service-box .service-info .service-title,
-#second-sidebar .block .block-title {
-  margin: 0 0 30px;
-  padding: 0 0 20px;
-  position: relative;
-  color: #000;
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-.service-box .service-info .service-title:after,
-#second-sidebar .block .block-title:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background-color: #b88e54;
-}
 .service-box .service-info .btn {
   padding: 7px 25px;
   margin-top: 15px;
@@ -3146,6 +3192,24 @@ footer .block ul li span {
 }
 #second-sidebar .block ul {
   list-style: none inside;
+}
+#second-sidebar .block .block-title {
+  margin: 0 0 30px;
+  padding: 0 0 20px;
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+#second-sidebar .block .block-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #b88e54;
 }
 #second-sidebar .block-categories {
   border: none;
