@@ -96,16 +96,16 @@ jQuery(document).ready(function ($) {
     /*-----------------------------------------------------------------------------------*/
     /*	Shuffe PORTFOLIO
      /*-----------------------------------------------------------------------------------*/
-    $('.gallery-wrap').each(function() {
-        var $grid = $(this).find('.gallery-items'),
+    $('.masonry-wrapper').each(function() {
+        var $grid = $(this).find('.masonry-items'),
             $sizer = $grid.find('.shuffle__sizer');
 
         $grid.shuffle({
-            itemSelector: '.gallery-item',
+            itemSelector: '.masonry-item',
             sizer: $sizer
         });
 
-        $('.filter-item', $('.gallery-wrap')).find('a').on('click', function(e) {
+        $('.filter-item', $('.masonry-wrapper')).find('a').on('click', function(e) {
             e.preventDefault();
             if ($(this).hasClass('active')) return false;
             var $this = $(this),
@@ -121,14 +121,14 @@ jQuery(document).ready(function ($) {
                     return $el.hasClass(filter);
                 });
             }
-            $(this).parents('.gallery-filter').find('a').removeClass('active');
+            $(this).parents('.masonry-filter').find('a').removeClass('active');
             $(this).addClass('active');
             return false;
         });
     });
     $('#modal-list-tables').on('shown.bs.modal', function (e) {
-        $('.gallery-wrap').each(function() {
-            var $grid = $(this).find('.gallery-items');
+        $('.masonry-wrapper').each(function() {
+            var $grid = $(this).find('.masonry-items');
             $grid.shuffle('update');
         });
     });
